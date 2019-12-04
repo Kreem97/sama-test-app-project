@@ -1,10 +1,17 @@
 import React from "react";
-//import ReactDOM from "react-dom";
+import Image from "react-image-resizer";
 
-function Header() {
+function Header(props) {
   return (
-    //ehh
-    <div>Header</div>
+    <div>
+      <Image
+        src={require("../res/SAMA_Logo.png")}
+        alt="Logo"
+        width={240}
+        height={80}
+      />
+      <h1>{props.comName}</h1>
+    </div>
   );
 }
 

@@ -1,11 +1,7 @@
 import React from "react";
-//import ReactDOM from "react-dom";
 
-function Footer() {
-  return (
-    //ehh
-    <div>Footer</div>
-  );
+function Footer(props) {
+  return <div>Sales Rep Info Here</div>;
 }
 
 export default Footer;

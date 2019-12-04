@@ -1,10 +1,13 @@
 import React from "react";
-//import ReactDOM from "react-dom";
+import ItemCard from "./ItemCard";
 
-function Items() {
+function Items(props) {
+  const itemCards = props.itemsList.map(item => <ItemCard item={item} />);
   return (
-    //ehh
-    <div>Items</div>
+    <div>
+      <h2>Items</h2>
+      <div>{itemCards}</div>
+    </div>
   );
 }
 
