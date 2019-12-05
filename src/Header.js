@@ -1,16 +1,19 @@
 //dependencies
 import React from "react";
+import { Link } from "react-router-dom";
 import Image from "react-image-resizer";
 
 function Header(props) {
   return (
     <div className="nav">
-      <Image
-        src={require("../res/SAMA_Logo.png")}
-        alt="Logo"
-        width={240}
-        height={80}
-      />
+      <Link to={"/"}>
+        <Image
+          src={require("../res/SAMA_Logo.png")}
+          alt="Logo"
+          width={240}
+          height={80}
+        />
+      </Link>
       <div className="contact-info">
         Contact {props.salesRep.FirstName} {props.salesRep.LastName} from{" "}
         {props.salesRep.CompanyName} for more info
