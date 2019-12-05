@@ -1,19 +1,19 @@
+//dependencies
 import React from "react";
 import { Link } from "react-router-dom";
 import Image from "react-image-resizer";
 
 function Items(props) {
   return (
-    <Link to={`/item/${props.item.ItemID}`}>
+    <Link className="item-card" to={`/item/${props.item.ItemID}`}>
       <Image
         src={props.item.PhotoName}
         alt="Item Image"
-        width={50}
-        height={50}
+        width={300}
+        height={300}
       />
-      <h3>{props.item.ItemName}</h3>
-      <h4>{props.item.Dimensions}</h4>
-      <h5>${props.item.BasePrice}</h5>
+      <p>{props.item.ItemName}</p>
+      <h3>${props.item.BasePrice}</h3>
     </Link>
   );
 }

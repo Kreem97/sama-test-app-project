@@ -10,20 +10,28 @@ function Item(props) {
     item => item.ItemID === props.match.params.id
   );
   return (
-    <div>
-      <Image src={item.PhotoName} alt="Item Image" width={100} height={100} />
-      <div>
-        ${item.BasePrice}
-        <br />
-        {item.ItemName}
-        <br />
-        Item ID: {item.ItemID}
+    <div className="item">
+      <Image
+        src={item.PhotoName}
+        alt="Item Image"
+        width={450}
+        height={450}
+      />
+      <div className="item-info">
+        <h3>
+          {item.ItemName}
+          <br />
+          ${item.BasePrice}
+        </h3>
+        <hr />
+        <p>
+          Item ID: {item.ItemID}
+          <br /><br />
+          Dimensions: {item.Dimensions}
+          <br /><br />
+          {item.Description}
+        </p>
       </div>
-      <p>
-        {item.Dimensions}
-        <br />
-        {item.Description}
-      </p>
     </div>
   );
 }

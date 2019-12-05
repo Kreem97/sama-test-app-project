@@ -2,3 +2,67 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.nav {
+  position: fixed;
+  top: 0px;
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid black;
+}
+
+.contact-info {
+  margin: auto;
+}
+
+.items {
+  margin-top: 80px;
+  padding: 0% 2% 0% 2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.item-card {
+  margin: 10px;
+  text-decoration: none;
+  text-align: left;
+  color: black;
+}
+
+.item-card:hover {
+  color: red;
+}
+
+.item-card p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.item-card h3 {
+  margin: 0;
+}
+
+.item {
+  margin-top: 80px;
+  padding: 0% 2% 0% 2%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: left;
+}
+
+.item-info {
+  width: 80%;
+}
+
+.item-info h3 {
+  margin: 0;
+}
+
+.item-info p {
+  margin: 0;
+}

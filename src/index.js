@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./Header";
 import Items from "./Items";
 import Item from "./Item";
-import Footer from "./Footer";
 
 //data
 import testData from "../res/test";
@@ -19,12 +18,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header comName={testData.CompanyName} />
+        <Header comName={testData.CompanyName} salesRep={testData.SalesRep} />
         <Switch>
           <Route path="/" exact component={Items} />
           <Route path="/item/:id" exact component={Item} />
         </Switch>
-        <Footer salesRep={testData.SalesRep} />
       </div>
     </Router>
   );
