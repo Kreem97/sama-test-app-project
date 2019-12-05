@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Image from "react-image-resizer";
 
 function Items(props) {
-  console.log(props);
   return (
     <Link to={`/item/${props.item.ItemID}`}>
       <Image

@@ -1,8 +1,14 @@
+//dependencies
 import React from "react";
 import ItemCard from "./ItemCard";
 
+//data
+import testData from "../res/test";
+
 function Items(props) {
-  const itemCards = props.itemsList.map(item => <ItemCard item={item} />);
+  const itemCards = testData.items.map(item => (
+    <ItemCard key={item.ItemID} item={item} />
+  ));
   return (
     <div>
       <h2>Items</h2>
