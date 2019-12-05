@@ -66,3 +66,25 @@
 .item-info p {
   margin: 0;
 }
+
+@media (max-width: 1200px) {
+  .nav {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .contact-info {
+    padding-bottom: 10px;
+    display: flex;
+    order: 2;
+  }
+
+  .nav h1 {
+    display: flex;
+    order: 1;
+  }
+
+  .items {margin-top: 230px;}
+
+  .item {margin-top: 230px;}
+}

@@ -2,9 +2,6 @@
 import React from "react";
 import Image from "react-image-resizer";
 
-//styles
-import "./styles.css";
-
 function Header(props) {
   return (
     <div className="nav">

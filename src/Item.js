@@ -14,8 +14,8 @@ function Item(props) {
       <Image
         src={item.PhotoName}
         alt="Item Image"
-        width={450}
-        height={450}
+        width={window.innerWidth > 500 ? 450 : 300}
+        height={window.innerWidth > 500 ? 450 : 300}
       />
       <div className="item-info">
         <h3>
